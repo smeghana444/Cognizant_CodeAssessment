@@ -6,9 +6,7 @@
       <class name="com.usga.qa.tests.PlayerSearch">
         <methods>
           <include name="FavPlayer_and_VerifyScorecardData" invocation-numbers="0"/>
-          <include name="teardown"/>
           <include name="verify_favplayer_in_leaderboard" invocation-numbers="0"/>
-          <include name="reportsetup"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.usga.qa.tests.PlayerSearch -->

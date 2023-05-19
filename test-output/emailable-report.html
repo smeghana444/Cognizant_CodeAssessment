@@ -9,17 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">65,832</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">137,654</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.usga.qa.tests.PlayerSearch</td><td><a href="#m0">FavPlayer_and_VerifyScorecardData</a></td><td rowspan="1">1683984364083</td><td rowspan="1">15</td></tr><tr class="failedeven"><td><a href="#m1">verify_favplayer_in_leaderboard</a></td><td rowspan="1">1683984364121</td><td rowspan="1">15528</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.usga.qa.tests.PlayerSearch</td><td><a href="#m2">enterPlayerName</a></td><td rowspan="1">1683984346436</td><td rowspan="1">17624</td></tr><tr class="passedeven"><td><a href="#m3">selectChampionship</a></td><td rowspan="1">1683984340842</td><td rowspan="1">5564</td></tr><tr class="passedeven"><td><a href="#m4">selectPermissionsButton</a></td><td rowspan="1">1683984333758</td><td rowspan="1">6657</td></tr><tr class="passedeven"><td><a href="#m5">testGetStartedButton</a></td><td rowspan="1">1683984325585</td><td rowspan="1">8164</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.usga.qa.tests.AndroidPlayerSearch</td><td><a href="#m0">verify_favplayer_in_leaderboard_Android</a></td><td rowspan="1">1684408364244</td><td rowspan="1">25548</td></tr><tr class="failedodd"><td rowspan="1">com.usga.qa.tests.IOSPlayerSearch</td><td><a href="#m1">FavPlayer_and_VerifyScorecardData_IOS</a></td><td rowspan="1">1684408351010</td><td rowspan="1">10222</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.usga.qa.tests.AndroidPlayerSearch</td><td><a href="#m2">FavPlayer_and_VerifyScorecardData_Android</a></td><td rowspan="1">1684408324236</td><td rowspan="1">39991</td></tr><tr class="passedeven"><td><a href="#m3">enterPlayerName_Android</a></td><td rowspan="1">1684408296471</td><td rowspan="1">27741</td></tr><tr class="passedeven"><td><a href="#m4">selectChampionship_Android</a></td><td rowspan="1">1684408277501</td><td rowspan="1">18950</td></tr><tr class="passedeven"><td><a href="#m5">selectPermissionsButton_Android</a></td><td rowspan="1">1684408270580</td><td rowspan="1">6521</td></tr><tr class="passedeven"><td><a href="#m6">testGetStartedButton_Android</a></td><td rowspan="1">1684408260850</td><td rowspan="1">9727</td></tr><tr class="passedodd"><td rowspan="4">com.usga.qa.tests.IOSPlayerSearch</td><td><a href="#m7">enterPlayerName_IOS</a></td><td rowspan="1">1684408330265</td><td rowspan="1">20725</td></tr><tr class="passedodd"><td><a href="#m8">selectChampionship_IOS</a></td><td rowspan="1">1684408311635</td><td rowspan="1">18610</td></tr><tr class="passedodd"><td><a href="#m9">selectPermissionsButton_IOS</a></td><td rowspan="1">1684408298113</td><td rowspan="1">13499</td></tr><tr class="passedodd"><td><a href="#m10">testGetStartedButton_IOS</a></td><td rowspan="1">1684408291187</td><td rowspan="1">6923</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.usga.qa.tests.PlayerSearch#FavPlayer_and_VerifyScorecardData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Chris Kirk</td><td></td><td>Round 1</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
+<h2>Test</h2><h3 id="m0">com.usga.qa.tests.AndroidPlayerSearch#verify_favplayer_in_leaderboard_Android</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.5&apos;
-Driver info: io.appium.java_client.AppiumDriver
-Command: [ba30477a-0edd-4fcf-874a-78b3dbb3abca, findElement {using=id, value=}]
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [de5c8ef1-0e5f-46b9-afe6-015c582c043b, findElement {using=xpath, value=//android.widget.CheckBox[@content-desc=&quot;Favorite button&quot;]}]
 Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F, platformName: android, platformVersion: 9}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 9, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba30477a-0edd-4fcf-874a-78b3dbb3abca
+Session ID: de5c8ef1-0e5f-46b9-afe6-015c582c043b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -32,18 +33,22 @@ Session ID: ba30477a-0edd-4fcf-874a-78b3dbb3abca
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:45)
-	at com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData(PlayerSearch.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.usga.qa.tests.PlayerSearch#verify_favplayer_in_leaderboard</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Chris Kirk</td><td></td><td>Round 1</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.usga.qa.androidscreens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:63)
+	at com.usga.qa.androidscreens.VerifyFavPlayerINLeaderboard.verifyFavToggleinLederbord(VerifyFavPlayerINLeaderboard.java:23)
+	at com.usga.qa.tests.AndroidPlayerSearch.verify_favplayer_in_leaderboard_Android(AndroidPlayerSearch.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.usga.qa.tests.IOSPlayerSearch#FavPlayer_and_VerifyScorecardData_IOS</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.5&apos;
-Driver info: io.appium.java_client.AppiumDriver
-Command: [ba30477a-0edd-4fcf-874a-78b3dbb3abca, findElement {using=id, value=}]
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [de5c8ef1-0e5f-46b9-afe6-015c582c043b, findElement {using=xpath, value=//XCUIElementTypeButton[@name=&quot;Favorite player Unchecked&quot;]}]
 Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F, platformName: android, platformVersion: 9}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 9, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: ba30477a-0edd-4fcf-874a-78b3dbb3abca
+Session ID: de5c8ef1-0e5f-46b9-afe6-015c582c043b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -56,15 +61,21 @@ Session ID: ba30477a-0edd-4fcf-874a-78b3dbb3abca
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:45)
-	at com.usga.qa.screens.VerifyFavPlayerINLeaderboard.verifyFavToggleinLederbord(VerifyFavPlayerINLeaderboard.java:23)
-	at com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard(PlayerSearch.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.usga.qa.tests.PlayerSearch#enterPlayerName</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Chris Kirk</td><td></td><td>Round 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.usga.qa.tests.PlayerSearch#selectChampionship</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Chris Kirk</td><td></td><td>Round 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.usga.qa.tests.PlayerSearch#selectPermissionsButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.usga.qa.tests.PlayerSearch#testGetStartedButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.usga.qa.iosscreens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:43)
+	at com.usga.qa.tests.IOSPlayerSearch.FavPlayer_and_VerifyScorecardData_IOS(IOSPlayerSearch.java:87)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.usga.qa.tests.AndroidPlayerSearch#FavPlayer_and_VerifyScorecardData_Android</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.usga.qa.tests.AndroidPlayerSearch#enterPlayerName_Android</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.usga.qa.tests.AndroidPlayerSearch#selectChampionship_Android</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.usga.qa.tests.AndroidPlayerSearch#selectPermissionsButton_Android</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.usga.qa.tests.AndroidPlayerSearch#testGetStartedButton_Android</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.usga.qa.tests.IOSPlayerSearch#enterPlayerName_IOS</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.usga.qa.tests.IOSPlayerSearch#selectChampionship_IOS</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>U.S. Senior Open</td><td>Jason Day</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.usga.qa.tests.IOSPlayerSearch#selectPermissionsButton_IOS</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.usga.qa.tests.IOSPlayerSearch#testGetStartedButton_IOS</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

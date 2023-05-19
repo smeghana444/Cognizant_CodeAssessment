@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 13 16:41:18 IST 2023</td>
+<td>Started on:</td><td>Mon May 15 16:56:15 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65393 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56691 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData()'><b>FavPlayer_and_VerifyScorecardData</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Senior Open, Chris Kirk, , Round 1</td>
+<td title='com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData()'><b>FavPlayer_and_VerifyScorecardData</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Open, Sam Ryder, Round 1</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.5&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.AppiumDriver
-Command: [3e9a1981-a0da-4310-99c7-5250abe4d48f, findElement {using=id, value=}]
+Command: [4b51e7a2-f058-40f5-a408-f395def2171d, findElement {using=id, value=}]
 Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F, platformName: android, platformVersion: 9}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 9, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Session ID: 4b51e7a2-f058-40f5-a408-f395def2171d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -101,13 +99,11 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
-	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:47)
-	at com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData(PlayerSearch.java:99)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:45)
+	at com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData(PlayerSearch.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -132,19 +128,17 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace379776337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace379776337'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
+</pre></div><a href='#' onClick='toggleBox("stack-trace951819642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951819642'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.5&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.AppiumDriver
-Command: [3e9a1981-a0da-4310-99c7-5250abe4d48f, findElement {using=id, value=}]
+Command: [4b51e7a2-f058-40f5-a408-f395def2171d, findElement {using=id, value=}]
 Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F, platformName: android, platformVersion: 9}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 9, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Session ID: 4b51e7a2-f058-40f5-a408-f395def2171d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -157,13 +151,11 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
-	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:47)
-	at com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData(PlayerSearch.java:99)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:45)
+	at com.usga.qa.tests.PlayerSearch.FavPlayer_and_VerifyScorecardData(PlayerSearch.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -190,21 +182,20 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.usga.qa.tests.PlayerSearch@2e8c1c9b</td></tr>
+<td>com.usga.qa.tests.PlayerSearch@20ce78ec</td></tr>
 <tr>
-<td title='com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard()'><b>verify_favplayer_in_leaderboard</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Senior Open, Chris Kirk, , Round 1</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
+<td title='com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard()'><b>verify_favplayer_in_leaderboard</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Open, Sam Ryder, Round 1</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.5&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.AppiumDriver
-Command: [3e9a1981-a0da-4310-99c7-5250abe4d48f, findElement {using=id, value=}]
+Command: [4b51e7a2-f058-40f5-a408-f395def2171d, findElement {using=xpath, value=//android.view.View[@content-desc=&quot;Search for a specific player&quot;]}]
 Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F, platformName: android, platformVersion: 9}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 9, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Session ID: 4b51e7a2-f058-40f5-a408-f395def2171d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -217,14 +208,12 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
-	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:47)
-	at com.usga.qa.screens.VerifyFavPlayerINLeaderboard.verifyFavToggleinLederbord(VerifyFavPlayerINLeaderboard.java:23)
-	at com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard(PlayerSearch.java:109)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.usga.qa.screens.SearchPlayer.clicksearchIcon(SearchPlayer.java:57)
+	at com.usga.qa.screens.VerifyFavPlayerINLeaderboard.searchFvoritedplayer(VerifyFavPlayerINLeaderboard.java:14)
+	at com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard(PlayerSearch.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -249,19 +238,18 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace123721308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace123721308'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Must provide a selector when finding elements
+</pre></div><a href='#' onClick='toggleBox("stack-trace1798194863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798194863'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.5&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.AppiumDriver
-Command: [3e9a1981-a0da-4310-99c7-5250abe4d48f, findElement {using=id, value=}]
+Command: [4b51e7a2-f058-40f5-a408-f395def2171d, findElement {using=xpath, value=//android.view.View[@content-desc=&quot;Search for a specific player&quot;]}]
 Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F, platformName: android, platformVersion: 9}, appium:deviceApiLevel: 28, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 9, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Session ID: 4b51e7a2-f058-40f5-a408-f395def2171d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -274,14 +262,12 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getText(Unknown Source)
-	at com.usga.qa.screens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:47)
-	at com.usga.qa.screens.VerifyFavPlayerINLeaderboard.verifyFavToggleinLederbord(VerifyFavPlayerINLeaderboard.java:23)
-	at com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard(PlayerSearch.java:109)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.usga.qa.screens.SearchPlayer.clicksearchIcon(SearchPlayer.java:57)
+	at com.usga.qa.screens.VerifyFavPlayerINLeaderboard.searchFvoritedplayer(VerifyFavPlayerINLeaderboard.java:14)
+	at com.usga.qa.tests.PlayerSearch.verify_favplayer_in_leaderboard(PlayerSearch.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -307,8 +293,8 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>15</td>
-<td>com.usga.qa.tests.PlayerSearch@2e8c1c9b</td></tr>
+<td>10</td>
+<td>com.usga.qa.tests.PlayerSearch@20ce78ec</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -319,25 +305,25 @@ Session ID: 3e9a1981-a0da-4310-99c7-5250abe4d48f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.usga.qa.tests.PlayerSearch.selectPermissionsButton()'><b>selectPermissionsButton</b><br>Test class: com.usga.qa.tests.PlayerSearch</td>
+<td title='com.usga.qa.tests.PlayerSearch.enterPlayerName()'><b>enterPlayerName</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Open, Sam Ryder, Round 1</td>
 <td></td>
-<td>6</td>
-<td>com.usga.qa.tests.PlayerSearch@2e8c1c9b</td></tr>
+<td>20</td>
+<td>com.usga.qa.tests.PlayerSearch@20ce78ec</td></tr>
 <tr>
 <td title='com.usga.qa.tests.PlayerSearch.testGetStartedButton()'><b>testGetStartedButton</b><br>Test class: com.usga.qa.tests.PlayerSearch</td>
 <td></td>
-<td>9</td>
-<td>com.usga.qa.tests.PlayerSearch@2e8c1c9b</td></tr>
+<td>6</td>
+<td>com.usga.qa.tests.PlayerSearch@20ce78ec</td></tr>
 <tr>
-<td title='com.usga.qa.tests.PlayerSearch.enterPlayerName()'><b>enterPlayerName</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Senior Open, Chris Kirk, , Round 1</td>
+<td title='com.usga.qa.tests.PlayerSearch.selectChampionship()'><b>selectChampionship</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Open, Sam Ryder, Round 1</td>
 <td></td>
-<td>16</td>
-<td>com.usga.qa.tests.PlayerSearch@2e8c1c9b</td></tr>
+<td>3</td>
+<td>com.usga.qa.tests.PlayerSearch@20ce78ec</td></tr>
 <tr>
-<td title='com.usga.qa.tests.PlayerSearch.selectChampionship()'><b>selectChampionship</b><br>Test class: com.usga.qa.tests.PlayerSearch<br>Parameters: U.S. Senior Open, Chris Kirk, , Round 1</td>
+<td title='com.usga.qa.tests.PlayerSearch.selectPermissionsButton()'><b>selectPermissionsButton</b><br>Test class: com.usga.qa.tests.PlayerSearch</td>
 <td></td>
 <td>6</td>
-<td>com.usga.qa.tests.PlayerSearch@2e8c1c9b</td></tr>
+<td>com.usga.qa.tests.PlayerSearch@20ce78ec</td></tr>
 </table><p>
 </body>
 </html>

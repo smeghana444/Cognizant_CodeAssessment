@@ -4,12 +4,19 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentManager {
+public class ExtentManager extends BaseClass
+{
+	
+	public static String screenshotName;
     private static ExtentReports extent;
     static String timeStamp = new SimpleDateFormat("yyyy.MM. dd. HH.mm. ss"). format (new Date());
     private static String reportFileName = "Test-Report-"+timeStamp+".html";
@@ -31,7 +38,7 @@ public class ExtentManager {
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
         htmlReporter.config().setChartVisibilityOnOpen(true);
-        htmlReporter.config().setTheme(Theme.STANDARD);
+        htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setDocumentTitle(reportFileName);
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setReportName(reportFileName);
@@ -61,6 +68,23 @@ public class ExtentManager {
             System.out.println("Directory already exists: " + path);
         }
 		return reportFileLocation;
+    }
+    public static void captureScreenshot() {
+        
+        TakesScreenshot screenshot = ((TakesScreenshot)driver);
+           
+        // Call method to capture screenshot
+        File src = screenshot.getScreenshotAs(OutputType.FILE);
+ 
+        try
+        {
+            Date d = new Date();
+            screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";  
+            FileUtils.copyFile(src,new File(System.getProperty("user.dir") + "\\reports\\" + screenshotName));
+            System.out.println("Successfully captured a screenshot");
+       } catch (Exception e) {
+           System.out.println("Exception while taking screenshot " + e.getMessage());
+      }
     }
  
 }
