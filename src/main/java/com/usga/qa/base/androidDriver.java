@@ -21,7 +21,7 @@ protected AndroidDriver driver;
 public androidDriver()
 {
 	this.driver=super.getAndroiddriver();
-	System.out.println(driver);
+	
 }
 public static String takescreenshot(String testName, AppiumDriver driver)
 {

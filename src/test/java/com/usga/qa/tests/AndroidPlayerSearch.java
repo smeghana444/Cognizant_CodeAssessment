@@ -37,7 +37,7 @@ public ExtentReports extent;
 	{
 	GetStartedScreen getstartedbutton=new GetStartedScreen();
 	getstartedbutton.clickgetstartedbutton();
-	ExtentTestManager.getTest().log(Status.INFO, "Clicked on Get Started Button");
+	ExtentTestManager.getTest().log(Status.INFO, "Clicked on Get Started Button ");
 	}
 	
 	@Test(priority=2)
