@@ -88,13 +88,5 @@ public ExtentReports extent;
 		verify.clickscorecardback();
 		verify.exitsearchfield();
 	}
-	/*
-	@Test(priority=6, dataProvider="getTestData")
-	public void verify_favplayer_in_leaderboard_IOS(String championshipname, String playername,String RoundNo) throws Exception
-	{
-		VerifyFavPlayerINLeaderboard verifytoggle= new VerifyFavPlayerINLeaderboard();
-		verifytoggle.searchFvoritedplayer(playername);
-		verifytoggle.verifyFavToggleinLederbord(playername);
-	}
-	*/
+	
 }

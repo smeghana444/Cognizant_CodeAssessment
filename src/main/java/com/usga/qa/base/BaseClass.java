@@ -1,8 +1,6 @@
 package com.usga.qa.base;
 
 
-
-import java.io.File;
 import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
