@@ -51,8 +51,7 @@ public class SearchPlayer extends iosDriver
         	selectscoring.searchicon.click();
 			Thread.sleep(1000);
         	
-		}
-      
+		}    
 		
        public void enterPlayername(String playerName)throws Exception
 		
@@ -63,7 +62,7 @@ public class SearchPlayer extends iosDriver
 			Thread.sleep(3000);		
 			String platformname=propertiesclass.initializeproperties("platformNameIOS");
 			if(platformname.equalsIgnoreCase("IOS"))
-			{	//AndroidDriver driver1=((AndroidDriver)driver);
+			{	
 				((IOSDriver)idriver).hideKeyboard();
 			System.out.println("Keyboard hide in IOS app");
 			Thread.sleep(2000);

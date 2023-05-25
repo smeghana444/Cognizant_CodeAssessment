@@ -56,7 +56,7 @@ public class VerifyScorecardData extends androidDriver
 		
 	   }
 	   
-		public void favsearchedplayer(String favplyer) throws Exception
+		public void favsearchedplayer() throws Exception
 		
 		{
 			Thread.sleep(2000);

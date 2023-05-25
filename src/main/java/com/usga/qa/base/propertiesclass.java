@@ -11,7 +11,7 @@ public class propertiesclass
     public static String initializeproperties(String propertyName)
     {
 
-            String configpath = "/Users/someghana/eclipse-workspace/usga/AppiumProject/src/main/java/com/usga/qa/config/config.properties";
+            String configpath = System.getProperty("user.dir")+"/src/main/java/com/usga/qa/config/config.properties";
   
         try {
             InputStream instm = new FileInputStream(configpath);

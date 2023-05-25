@@ -1,10 +1,32 @@
 package com.usga.qa.androidscreens;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.usga.qa.androidscreens.GetStartedScreen.pageObjects;
 import com.usga.qa.base.androidDriver;
 
 public class VerifyFavPlayerINLeaderboard extends androidDriver 
 {
 	//checkbox=(//android.widget.CheckBox)[1]
+	
+	pageObjects unfavoritesearchedplayer;
+
+	   public VerifyFavPlayerINLeaderboard() 
+		{
+	        super();
+
+	   unfavoritesearchedplayer = new pageObjects();
+
+	  PageFactory.initElements(driver, unfavoritesearchedplayer);
+
+	   }
+	   class pageObjects
+	   {
+		@FindBy(xpath="(//android.widget.CheckBox)[1]")
+		public WebElement unfavorite;
+	   }
 			
 		public void searchFvoritedplayer(String playername) throws Exception
 		
@@ -17,21 +39,12 @@ public class VerifyFavPlayerINLeaderboard extends androidDriver
 			
 			
 		}
-		public void verifyFavToggleinLederbord(String favtoggle) throws Exception
+		public void verifyFavToggleinLederbord() throws Exception
 		{
-			VerifyScorecardData verifyfavtoggle=new VerifyScorecardData();
-			verifyfavtoggle.favsearchedplayer(favtoggle);
-/*String toggle=verifyscorecarddata.favicon.getText();
+			unfavoritesearchedplayer.unfavorite.click();			
+			System.out.println("Player is Unfavorited");
 			
-			if(toggle.equalsIgnoreCase(favplyer))
-			{
-				System.out.println("player is favorited");
-			}
-			else {
-				verifyscorecarddata.favicon.click();
-				System.out.println("Plyer is fvorited");
-			}
-		}*/
-	
+			
+
 }
 }

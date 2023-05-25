@@ -1,7 +1,5 @@
 package listeners;
 
-
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -19,9 +17,7 @@ import io.appium.java_client.AppiumDriver;
 
 
 public class ExtentReportsListeners extends BaseClass implements ITestListener
-{
-	
-	
+{	
 	public ExtentReports extent;
     public ExtentTest test;
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();

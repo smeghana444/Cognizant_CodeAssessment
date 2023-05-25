@@ -86,7 +86,7 @@ public ExtentReports extent;
 	public void FavPlayer_and_VerifyScorecardData_Android(String championshipname, String playername,String RoundNo) throws Exception
 	{
 		VerifyScorecardData verify=new VerifyScorecardData();
-		verify.favsearchedplayer(playername);
+		verify.favsearchedplayer();
 		ExtentTestManager.getTest().log(Status.INFO, "Favorited searched player "+playername);
 		verify.selecttab();
 		ExtentTestManager.getTest().log(Status.INFO, "Selected scorecard tab for player "+playername);
@@ -105,7 +105,10 @@ public ExtentReports extent;
 		VerifyFavPlayerINLeaderboard verifytoggle= new VerifyFavPlayerINLeaderboard();
 		verifytoggle.searchFvoritedplayer(playername);
 		ExtentTestManager.getTest().log(Status.INFO, "Search favorited player on leaderboard "+playername);
-		verifytoggle.verifyFavToggleinLederbord(playername);
-		ExtentTestManager.getTest().log(Status.INFO, "Verify player is favoried ");
+		verifytoggle.verifyFavToggleinLederbord();
+		ExtentTestManager.getTest().log(Status.INFO, "player is Unfavoried ");
+		VerifyScorecardData exitsearch=new VerifyScorecardData();
+		exitsearch.exitsearchfield();
+		ExtentTestManager.getTest().log(Status.INFO, "Exited from Leaderboard search field");
 	}
 }
