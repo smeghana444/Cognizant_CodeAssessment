@@ -6,8 +6,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-       <class name="com.usga.qa.tests.AndroidPlayerSearch"/>
-       <class name="com.usga.qa.tests.IOSPlayerSearch"/>
+       <class name="com.usga.qa.tests.AndroidPlayerSearch"/>  
+       <class name="com.usga.qa.tests.IOSPlayerSearch"/>  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

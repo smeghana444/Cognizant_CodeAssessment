@@ -3,8 +3,6 @@ package com.usga.qa.androidscreens;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.usga.qa.androidscreens.GetStartedScreen.pageObjects;
 import com.usga.qa.base.androidDriver;
 
 public class VerifyFavPlayerINLeaderboard extends androidDriver 

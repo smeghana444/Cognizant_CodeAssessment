@@ -69,22 +69,6 @@ public class ExtentManager extends BaseClass
         }
 		return reportFileLocation;
     }
-    public static void captureScreenshot() {
-        
-        TakesScreenshot screenshot = ((TakesScreenshot)driver);
-           
-        // Call method to capture screenshot
-        File src = screenshot.getScreenshotAs(OutputType.FILE);
- 
-        try
-        {
-            Date d = new Date();
-            screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";  
-            FileUtils.copyFile(src,new File(System.getProperty("user.dir") + "\\reports\\" + screenshotName));
-            System.out.println("Successfully captured a screenshot");
-       } catch (Exception e) {
-           System.out.println("Exception while taking screenshot " + e.getMessage());
-      }
-    }
+    
  
 }

@@ -113,7 +113,9 @@ public class VerifyScorecardData extends androidDriver
 	                	System.out.println("Player Found");
 	                    break;
 	                } 
-	                
+	                 else {
+	                	 System.out.println("No scorecard Available");
+	                 }
 	            }
 	      	}catch(Exception e)
 				{

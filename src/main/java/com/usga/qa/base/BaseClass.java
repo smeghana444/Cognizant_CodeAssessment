@@ -37,9 +37,9 @@ public class BaseClass
 		 System.out.println("Android");
 		 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
          desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformnameandroid);
-         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
+         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
          desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "SM-G973F");
+         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "SM-G973F/DS");
          //desiredCapabilities.setCapability(MobileCapabilityType.APP, "/path/to/ios/app.zip");
          desiredCapabilities.setCapability("appPackage", apppackage);
          System.out.println(apppackage);

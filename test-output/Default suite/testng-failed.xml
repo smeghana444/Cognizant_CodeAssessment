@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.usga.qa.tests.PlayerSearch">
+      <class name="com.usga.qa.tests.AndroidPlayerSearch">
         <methods>
-          <include name="FavPlayer_and_VerifyScorecardData" invocation-numbers="0"/>
-          <include name="verify_favplayer_in_leaderboard" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="verify_favplayer_in_leaderboard_Android" invocation-numbers="0"/>
+          <include name="selectChampionship_Android" invocation-numbers="0"/>
+          <include name="selectPermissionsButton_Android"/>
+          <include name="FavPlayer_and_VerifyScorecardData_Android" invocation-numbers="0"/>
+          <include name="testGetStartedButton_Android"/>
+          <include name="enterPlayerName_Android" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.usga.qa.tests.PlayerSearch -->
+      </class> <!-- com.usga.qa.tests.AndroidPlayerSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,12 +1,16 @@
 package com.usga.qa.base;
 
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.monte.screenrecorder.ScreenRecorder;
+
 public class propertiesclass
 {
-
+     ScreenRecorder screenrecorder;
+	 public String name;
 
     public static String initializeproperties(String propertyName)
     {
@@ -25,4 +29,6 @@ public class propertiesclass
         }
         return configpath;
     }
+    
+    
 }

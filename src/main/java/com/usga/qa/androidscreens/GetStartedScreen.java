@@ -29,7 +29,7 @@ public class GetStartedScreen extends androidDriver
 	public void clickgetstartedbutton() throws Exception
 	
 	{
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		getstarted.getstartedbutton.click();
 		Thread.sleep(3000);
 	}

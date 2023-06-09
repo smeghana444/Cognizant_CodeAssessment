@@ -24,7 +24,7 @@ public class OnboardingProcess extends androidDriver
 		@FindBy(xpath="//android.view.View[@content-desc=\"Select to provide permissions Button. Double tap to activate\"]")
 		public WebElement selectpermissions;
 		
-		@FindBy(id="com.android.packageinstaller:id/permission_allow_button")
+		@FindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
 		public WebElement Allowlocpopup;
 		
 		@FindBy(xpath="//android.view.View[@content-desc=\"Next Button on USGA Tutorial page Double tap to activate\"]")

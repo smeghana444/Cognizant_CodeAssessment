@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.ExtentReportsListeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
+      <class name="com.usga.qa.tests.IOSPlayerSearch">
+        <methods>
+          <include name="FavPlayer_and_VerifyScorecardData_IOS" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.usga.qa.tests.IOSPlayerSearch -->
       <class name="com.usga.qa.tests.AndroidPlayerSearch">
         <methods>
           <include name="setup"/>
           <include name="verify_favplayer_in_leaderboard_Android" invocation-numbers="0"/>
-          <include name="selectChampionship_Android" invocation-numbers="0"/>
-          <include name="selectPermissionsButton_Android"/>
           <include name="FavPlayer_and_VerifyScorecardData_Android" invocation-numbers="0"/>
-          <include name="testGetStartedButton_Android"/>
-          <include name="enterPlayerName_Android" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.usga.qa.tests.AndroidPlayerSearch -->
     </classes>

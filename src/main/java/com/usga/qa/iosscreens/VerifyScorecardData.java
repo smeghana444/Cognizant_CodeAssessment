@@ -33,8 +33,6 @@ public class VerifyScorecardData extends iosDriver
 		@FindBy(xpath="//XCUIElementTypeButton[@name=\"Exit\"]")
 		public WebElement exitsearchfield;
 		
-		
-		
 	   }
 	   
 		public void favsearchedplayer(String favplyer) throws Exception
@@ -43,8 +41,7 @@ public class VerifyScorecardData extends iosDriver
 			verifyscorecarddata.favicon.click();
         	Thread.sleep(1000);
         	System.out.println("Player is favorited");
-			
-			
+						
 		}
 				
 		public void clickscorecardback()throws Exception
