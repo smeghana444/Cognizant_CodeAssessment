@@ -11,9 +11,10 @@ import com.aventstack.extentreports.Status;
 import com.usga.qa.base.BaseClass;
 import com.usga.qa.base.ExtentManager;
 import com.usga.qa.base.ExtentTestManager;
-import com.usga.qa.base.ScreenRecorderUtil;
 import com.usga.qa.base.androidDriver;
 import com.usga.qa.base.iosDriver;
+import com.usga.qa.base.propertiesclass;
+
 import io.appium.java_client.AppiumDriver;
 
 
@@ -21,11 +22,11 @@ public class ExtentReportsListeners extends BaseClass implements ITestListener
 {	
 	public ExtentReports extent;
     public ExtentTest test;
-    
+    propertiesclass record=new propertiesclass();
     
 	public void onStart(ITestContext context) {
 		try {
-			ScreenRecorderUtil.startRecord("Recording");
+			record.startRecord();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -35,7 +36,7 @@ public class ExtentReportsListeners extends BaseClass implements ITestListener
 
 	public void onFinish(ITestContext context) {
 		try {
-			ScreenRecorderUtil.stopRecord();
+			record.stopRecord();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
