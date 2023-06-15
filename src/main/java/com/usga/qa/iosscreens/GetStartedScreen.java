@@ -32,6 +32,4 @@ public class GetStartedScreen extends iosDriver
 		Thread.sleep(1000);
 	}
 	
-
-	
 }

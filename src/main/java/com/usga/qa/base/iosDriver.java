@@ -16,6 +16,7 @@ public class iosDriver extends BaseClass
 	
    
 protected IOSDriver idriver;
+public  static String screenshotsubfoldername;
 
 public iosDriver()
 {

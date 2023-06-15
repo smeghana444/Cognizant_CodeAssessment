@@ -19,9 +19,6 @@ import com.usga.qa.base.ExtentTestManager;
 import com.usga.qa.base.ReadDataFromExcel;
 
 
-
-
-
 public class AndroidPlayerSearch extends ReadDataFromExcel
 {
 public String repName;

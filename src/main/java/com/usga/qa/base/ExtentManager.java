@@ -3,20 +3,15 @@ package com.usga.qa.base;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentManager extends BaseClass
+public class ExtentManager
 {
 	
-	public static String screenshotName;
+	
     private static ExtentReports extent;
     static String timeStamp = new SimpleDateFormat("yyyy.MM. dd. HH.mm. ss"). format (new Date());
     private static String reportFileName = "Test-Report-"+timeStamp+".html";

@@ -26,7 +26,9 @@ public class ExtentReportsListeners extends BaseClass implements ITestListener
     
 	public void onStart(ITestContext context) {
 		try {
+			
 			record.startRecord();
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -44,7 +46,7 @@ public class ExtentReportsListeners extends BaseClass implements ITestListener
 		System.out.println(("*** Test Suite " + context.getName() + " ending ***"));
 		ExtentTestManager.endTest();
 		ExtentManager.getInstance().flush();
-		
+		BaseClass.stopServer();
 	}
 
 	public void onTestStart(ITestResult result) {

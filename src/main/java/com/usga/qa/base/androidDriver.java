@@ -2,13 +2,8 @@ package com.usga.qa.base;
 
 
 
-
-
-
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 

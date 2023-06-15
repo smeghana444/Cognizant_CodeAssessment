@@ -34,7 +34,7 @@ public class ReadDataFromExcel
                  data[i-1][j]=cellData;
                 }
             }
-
+        wb.close();
         }catch(Exception e)
         {
             e.printStackTrace();
