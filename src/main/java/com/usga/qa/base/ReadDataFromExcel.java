@@ -13,7 +13,7 @@ public class ReadDataFromExcel
     @DataProvider(name = "getTestData")
     public Object[][] getData()
     {
-        String path=System.getProperty("user.dir")+"/src/main/java/com/usga/qa/testdata/PlayersData.xlsx";
+        String path=System.getProperty("user.dir")+"/src/main/java/com/usga/qa/testdata/FestivalBandNames.xlsx";
         String[][] data=null;
 
         try{

@@ -1,0 +1,1 @@
+{"uuid":"dffa9477-c838-4d13-bdeb-bf6fad468fa4","name":"com.usga.qa.tests.Android","children":["567c5fd0-9978-4e6e-9775-05d0a4dcfaea"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1687950475733,"stop":1687950488037}],"afters":[],"start":1687950475397,"stop":1687950492380}

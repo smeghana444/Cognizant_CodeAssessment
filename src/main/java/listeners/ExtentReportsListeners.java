@@ -12,7 +12,6 @@ import com.usga.qa.base.BaseClass;
 import com.usga.qa.base.ExtentManager;
 import com.usga.qa.base.ExtentTestManager;
 import com.usga.qa.base.androidDriver;
-import com.usga.qa.base.iosDriver;
 import com.usga.qa.base.propertiesclass;
 
 import io.appium.java_client.AppiumDriver;
@@ -26,7 +25,7 @@ public class ExtentReportsListeners extends BaseClass implements ITestListener
     
 	public void onStart(ITestContext context) {
 		try {
-			
+			 
 			record.startRecord();
 			
 		} catch (Exception e) {
@@ -73,23 +72,14 @@ public class ExtentReportsListeners extends BaseClass implements ITestListener
 				ExtentTestManager.getTest().log(Status.FAIL,"Test Case is Failed "+result.getThrowable());	
 				String testName=result.getName();
 				System.out.println(" Test Name is "+testName);
-				if(testName.contains("Android"))
-				{
-					AppiumDriver androiddriver=((AppiumDriver)driver);
-					String screenshotpath=androidDriver.takescreenshot(testName, androiddriver);
-					ExtentTestManager.getTest().pass(testName, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotpath).build());
-					ExtentTestManager.getTest().log(Status.FAIL, "Screenshot Captured successfully");
-					System.out.println("Screenshot saved successfully");
-				} 
+				AppiumDriver androiddriver=((AppiumDriver)driver);
+				String screenshotpath=androidDriver.takescreenshot(testName, androiddriver);
+				ExtentTestManager.getTest().pass(testName, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotpath).build());
+				ExtentTestManager.getTest().log(Status.FAIL, "Screenshot Captured successfully");
+				System.out.println("Screenshot saved successfully");
 				
-				if(testName.contains("IOS"))
-				{
-					AppiumDriver iosdriver=((AppiumDriver)idriver);
-					String screenshotpath=iosDriver.takescreenshot(testName, iosdriver);
-					ExtentTestManager.getTest().addScreenCaptureFromPath(screenshotpath);
-					ExtentTestManager.getTest().log(Status.FAIL, "Screenshot Captured successfully");
-					System.out.println("Screenshot captured successfully");
-				} }catch(Exception e)
+				
+			  }catch(Exception e)
 			  {
 					e.printStackTrace();
 			  }

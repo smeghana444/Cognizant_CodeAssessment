@@ -1,60 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-14T17:56:23 IST" name="Suite" finished-at="2023-06-14T17:57:54 IST" duration-ms="90655">
+  <suite started-at="2023-06-29T13:51:31 IST" name="Suite" finished-at="2023-06-29T13:52:35 IST" duration-ms="63663">
     <groups>
     </groups>
-    <test started-at="2023-06-14T17:56:23 IST" name="Test" finished-at="2023-06-14T17:57:54 IST" duration-ms="90655">
-      <class name="com.usga.qa.tests.AndroidPlayerSearch">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:56:24 IST" name="setup" finished-at="2023-06-14T17:56:38 IST" duration-ms="14465" status="PASS">
+    <test started-at="2023-06-29T13:51:31 IST" name="Test" finished-at="2023-06-29T13:52:35 IST" duration-ms="63663">
+      <class name="com.usga.qa.tests.Android">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.usga.qa.tests.Android@231f98ef]" started-at="2023-06-29T13:51:31 IST" name="setup" finished-at="2023-06-29T13:51:43 IST" duration-ms="11112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGetStartedButton_Android()[pri:1, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:56:38 IST" name="testGetStartedButton_Android" finished-at="2023-06-14T17:56:53 IST" duration-ms="14510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetStartedButton_Android -->
-        <test-method signature="selectPermissionsButton_Android()[pri:2, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:56:53 IST" name="selectPermissionsButton_Android" finished-at="2023-06-14T17:56:59 IST" duration-ms="5975" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectPermissionsButton_Android -->
-        <test-method signature="selectChampionship_Android(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:56:59 IST" name="selectChampionship_Android" data-provider="getTestData" finished-at="2023-06-14T17:57:18 IST" duration-ms="19231" status="PASS">
+        <test-method signature="VerifyFestivalName(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.usga.qa.tests.Android@231f98ef]" started-at="2023-06-29T13:51:43 IST" name="VerifyFestivalName" data-provider="getTestData" finished-at="2023-06-29T13:51:58 IST" duration-ms="15188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[U.S. Open]]>
+                <![CDATA[Squint-281]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Jason Day]]>
+                <![CDATA[Small Night In]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[4]]>
+                <![CDATA[Yan East]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectChampionship_Android -->
-        <test-method signature="enterPlayerName_Android(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:57:18 IST" name="enterPlayerName_Android" data-provider="getTestData" finished-at="2023-06-14T17:57:29 IST" duration-ms="11098" status="FAIL">
+        </test-method> <!-- VerifyFestivalName -->
+        <test-method signature="VerifyBandName(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.usga.qa.tests.Android@231f98ef]" started-at="2023-06-29T13:51:58 IST" name="VerifyBandName" data-provider="getTestData" finished-at="2023-06-29T13:52:34 IST" duration-ms="36172" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[U.S. Open]]>
+                <![CDATA[Squint-281]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Jason Day]]>
+                <![CDATA[Small Night In]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[4]]>
+                <![CDATA[Yan East]]>
               </value>
             </param>
           </params>
@@ -63,21 +55,21 @@
               <![CDATA[An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '19.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [44375309-ddfb-4095-94f6-eb9224a65693, findElement {using=xpath, value=//android.view.View[@content-desc="Latest scores and leaderboard Tab"]}]
-Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F/DS, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 11, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 44375309-ddfb-4095-94f6-eb9224a65693]]>
+Command: [72956486-f9b8-4162-9dab-9a700190c247, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text("Yan East"));}]
+Capabilities {appium:app: /Users/someghana/eclipse-wo..., appium:appPackage: com.energyaustralia.codingt..., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/someghana/eclipse-wo..., automationName: UiAutomator2, deviceName: Android SDK built for x86, platformName: android, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 480x800, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.5, appium:platformVersion: 10, appium:statBarHeight: 36, appium:takesScreenshot: true, appium:viewportRect: {height: 764, left: 0, top: 36, width: 480}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 72956486-f9b8-4162-9dab-9a700190c247]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '19.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '19.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [44375309-ddfb-4095-94f6-eb9224a65693, findElement {using=xpath, value=//android.view.View[@content-desc="Latest scores and leaderboard Tab"]}]
-Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F/DS, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 11, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 44375309-ddfb-4095-94f6-eb9224a65693
+Command: [72956486-f9b8-4162-9dab-9a700190c247, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text("Yan East"));}]
+Capabilities {appium:app: /Users/someghana/eclipse-wo..., appium:appPackage: com.energyaustralia.codingt..., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/someghana/eclipse-wo..., automationName: UiAutomator2, deviceName: Android SDK built for x86, platformName: android, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 480x800, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.5, appium:platformVersion: 10, appium:statBarHeight: 36, appium:takesScreenshot: true, appium:viewportRect: {height: 764, left: 0, top: 36, width: 480}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 72956486-f9b8-4162-9dab-9a700190c247
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -88,14 +80,11 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.usga.qa.androidscreens.SearchPlayer.selectScoring(SearchPlayer.java:50)
-at com.usga.qa.tests.AndroidPlayerSearch.enterPlayerName_Android(AndroidPlayerSearch.java:85)
+at com.usga.qa.androidscreens.VerifyBand_and_FestivalNames.verifybandnames(VerifyBand_and_FestivalNames.java:108)
+at com.usga.qa.tests.Android.VerifyBandName(Android.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -114,159 +103,8 @@ at java.base/java.lang.Thread.run(Thread.java:1589)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterPlayerName_Android -->
-        <test-method signature="FavPlayer_and_VerifyScorecardData_Android(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:57:30 IST" name="FavPlayer_and_VerifyScorecardData_Android" data-provider="getTestData" finished-at="2023-06-14T17:57:42 IST" duration-ms="12057" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[U.S. Open]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Jason Day]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [44375309-ddfb-4095-94f6-eb9224a65693, findElement {using=xpath, value=//android.widget.CheckBox[@content-desc="Favorite button"]}]
-Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F/DS, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 11, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 44375309-ddfb-4095-94f6-eb9224a65693]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [44375309-ddfb-4095-94f6-eb9224a65693, findElement {using=xpath, value=//android.widget.CheckBox[@content-desc="Favorite button"]}]
-Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F/DS, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 11, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 44375309-ddfb-4095-94f6-eb9224a65693
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.usga.qa.androidscreens.VerifyScorecardData.favsearchedplayer(VerifyScorecardData.java:63)
-at com.usga.qa.tests.AndroidPlayerSearch.FavPlayer_and_VerifyScorecardData_Android(AndroidPlayerSearch.java:105)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FavPlayer_and_VerifyScorecardData_Android -->
-        <test-method signature="verify_favplayer_in_leaderboard_Android(java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:com.usga.qa.tests.AndroidPlayerSearch@247310d0]" started-at="2023-06-14T17:57:42 IST" name="verify_favplayer_in_leaderboard_Android" data-provider="getTestData" finished-at="2023-06-14T17:57:53 IST" duration-ms="11050" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[U.S. Open]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Jason Day]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [44375309-ddfb-4095-94f6-eb9224a65693, findElement {using=xpath, value=//android.view.View[@content-desc="Search for a specific player"]}]
-Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F/DS, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 11, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 44375309-ddfb-4095-94f6-eb9224a65693]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '19.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [44375309-ddfb-4095-94f6-eb9224a65693, findElement {using=xpath, value=//android.view.View[@content-desc="Search for a specific player"]}]
-Capabilities {appium:appActivity: org.usga.ui.MainComposeActi..., appium:appPackage: org.usga.qa, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: org.usga.ui.MainComposeActi..., appPackage: org.usga.qa, automationName: UiAutomator2, deviceName: SM-G973F/DS, platformName: android, platformVersion: 11}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G973F, appium:deviceName: RZ8M31132JF, appium:deviceScreenDensity: 411, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RZ8M31132JF, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.5687501, appium:platformVersion: 11, appium:statBarHeight: 112, appium:takesScreenshot: true, appium:viewportRect: {height: 1933, left: 0, top: 112, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 44375309-ddfb-4095-94f6-eb9224a65693
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.usga.qa.androidscreens.SearchPlayer.clicksearchIcon(SearchPlayer.java:58)
-at com.usga.qa.androidscreens.VerifyFavPlayerINLeaderboard.searchFvoritedplayer(VerifyFavPlayerINLeaderboard.java:34)
-at com.usga.qa.tests.AndroidPlayerSearch.verify_favplayer_in_leaderboard_Android(AndroidPlayerSearch.java:128)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_favplayer_in_leaderboard_Android -->
-      </class> <!-- com.usga.qa.tests.AndroidPlayerSearch -->
+        </test-method> <!-- VerifyBandName -->
+      </class> <!-- com.usga.qa.tests.Android -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

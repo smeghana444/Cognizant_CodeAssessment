@@ -6,12 +6,12 @@
       <class name="com.usga.qa.tests.AndroidPlayerSearch">
         <methods>
           <include name="setup"/>
-          <include name="verify_favplayer_in_leaderboard_Android" invocation-numbers="0"/>
-          <include name="selectChampionship_Android" invocation-numbers="0"/>
+          <include name="verify_favplayer_in_leaderboard_Android"/>
+          <include name="selectChampionship_Android"/>
           <include name="selectPermissionsButton_Android"/>
-          <include name="FavPlayer_and_VerifyScorecardData_Android" invocation-numbers="0"/>
+          <include name="FavPlayer_and_VerifyScorecardData_Android"/>
           <include name="testGetStartedButton_Android"/>
-          <include name="enterPlayerName_Android" invocation-numbers="0"/>
+          <include name="enterPlayerName_Android"/>
         </methods>
       </class> <!-- com.usga.qa.tests.AndroidPlayerSearch -->
     </classes>
